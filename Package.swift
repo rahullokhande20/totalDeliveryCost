@@ -4,17 +4,20 @@
 import PackageDescription
 
 let package = Package(
-    name: "totalDeliveryCost",
+    name: "total-delivery-cost",
     platforms: [.macOS(.v12)],
-    dependencies: [        
+   
+    
+    dependencies: [
         .package(url: "https://github.com/apple/swift-argument-parser.git", from: "1.3.0")
     ],
+    
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .executableTarget(
-            name: "totalDeliveryCost",
-            dependencies: [
+            name: "TotalDeliveryCost",
+           dependencies: [
                 .product(name: "ArgumentParser", package: "swift-argument-parser")]
         ),
     ]
